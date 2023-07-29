@@ -1,0 +1,136 @@
+body  {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EFEFEF;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #131313;
+    border-bottom: 3px solid #808080;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+header > h1 {
+    margin-left: 3em;
+}
+
+header > button {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    width: 10em;
+    height: 3em;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 3em;
+}
+
+.account > img {
+    width: 40px;
+    height: auto;
+    margin-right: 1em;
+}
+
+.account > h1 {
+    font-size: 1.5rem;
+}
+
+form {
+    z-index: -1000;
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 20em;
+    background-color: white;
+    border-radius: 10px;
+    top: -100em;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.form > input {
+    width: 10em;
+    height: 2em;
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    border: none;
+}
+
+.form > input:focus {
+    outline: none;
+}
+
+.total #number {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5em;
+    margin-right: 1em;
+}
+
+.total #number > input {
+    width: 2em;
+}
+
+.total > button {
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    width: 10em;
+    height: 3em;
+    cursor: pointer;
+    margin-top: 1em;
+    color: white;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: 1fr;
+    gap: 2em;
+    padding: 2em;
+    background-color: #EFEFEF;
+    width: 100vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card > h1 {
+    color: red;
+
+}
