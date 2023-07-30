@@ -134,3 +134,12 @@ form {
     color: red;
 
 }
+
+.card > button {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    width: 10em;
+    height: 3em;
+    cursor: pointer;
+}
