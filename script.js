@@ -113,9 +113,19 @@ function changeColor(id) {
     if (button.style.backgroundColor === 'green') {
         button.style.backgroundColor = 'red';
         button.textContent = 'Not Read';
+        for (object in myLibrary) {
+            if(obect.title === 'id') {
+                obect.read = false;
+            }
+        }
     } else {
         button.style.backgroundColor = 'green';
         button.textContent = "Read"
+        for (object in myLibrary) {
+            if(obect.title === 'id') {
+                obect.read = true;
+            }
+        }
     }
 }
 
