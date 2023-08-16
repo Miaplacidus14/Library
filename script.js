@@ -26,16 +26,19 @@ function addBookToLibrary () {
             label.setAttribute("for", "title");
             label.textContent = "Title :"
             input.setAttribute('name', 'title');
+            input.required = true;
         } else if (i === 1) {
             input.setAttribute('type', 'text');
             label.setAttribute("for", "author");
             label.textContent = "Author :"
-            input.setAttribute('name', 'author');   
+            input.setAttribute('name', 'author');
+            input.required = true;
         } else if (i === 2) {
             input.setAttribute('type', 'number');
             label.setAttribute("for", "pages");
             label.textContent = "Number of pages :"
             input.setAttribute('name', 'pages');
+            input.required = true;
         } else {
             input.setAttribute('name', 'read');
             input.setAttribute('type', 'checkbox');
